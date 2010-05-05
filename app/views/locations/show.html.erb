@@ -7,5 +7,6 @@
   <b>Address:</b>
   <%=h @location.address %>
 </p>
+<%= google_map(@location.address, :size => "256x256", :color => "red")%>
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>

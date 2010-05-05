@@ -24,6 +24,8 @@
 			&#9733;
 		<% end %>
 </p>
-
-<%= link_to 'Edit', edit_review_path(@review), {:class => "button"} %>
-<%= link_to 'Back', reviews_path, {:class => "button"} %>
+<%= google_map(@review.location_address, :size => "256x256", :color => "red")%>
+<div id="show-actions">
+	<%= link_to 'Edit', edit_review_path(@review), {:class => "button"} %>
+	<%= link_to 'Back', reviews_path, {:class => "button"} %>
+</div>
