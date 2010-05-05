@@ -1,0 +1,41 @@
+#container
+{
+	width:800px;
+	margin: 0 auto;
+	border:solid 3px #CCC;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	padding: 5px 5px 5px 15px;
+}
+
+#header
+{
+	
+}
+
+#content
+{
+	
+}
+
+#footer
+{
+	text-align:center;
+}
+
+.button {
+  margin:1px;
+  display: block;
+  width: 6em; /* dimensions needed for IE5.x/Win */
+  padding: 0.2em;
+  line-height: 1.4;
+  background-color: #C6E2FF;
+  border: 1px solid black;
+  -moz-border-radius:10px;
+  color: #000;
+  text-decoration:none;
+  text-align:center;
+}
+
