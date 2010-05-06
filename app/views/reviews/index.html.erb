@@ -27,7 +27,7 @@
 		<h4>Actions</h4>
 			<%= link_to 'Show', review, {:class => "button"} %>
 			<%= link_to 'Edit', edit_review_path(review), {:class => "button"} %>
-			<%= link_to 'Delete', review, {:class => "button"}, :confirm => 'Are you sure?', :method => :delete %>
+			<%= link_to 'Delete', review, :confirm => 'Are you sure?', :method => :delete, :class => "button" %>
 	</span>
     <hr />
 <% end %>

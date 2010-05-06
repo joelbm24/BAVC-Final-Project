@@ -8,5 +8,14 @@
   <%=h @location.address %>
 </p>
 <%= google_map(@location.address, :size => "256x256", :color => "red")%>
+
+<p>
+  <b>Simular Reviews</b>
+  <% @location.reviews.each do |sim_location| %>
+	<br />
+	<%= link_to sim_location.title ,"/reviews/show/#{sim_location.id}" %>
+  <% end %>
+</p>
+<br />
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
