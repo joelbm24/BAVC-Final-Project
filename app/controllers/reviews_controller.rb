@@ -60,7 +60,10 @@ class ReviewsController < ApplicationController
   # PUT /reviews/1.xml
   def update
     @review = Review.find(params[:id])
-
+	if params[:review][:location_attributes][:name].blank? and params[:review][:location_attributes][:address].blank?
+		@review.location = Location.find(params[:review][:location_id])
+		params[:review].delete(:location_attributes)
+	end
     respond_to do |format|
       if @review.update_attributes(params[:review])
         flash[:notice] = 'Review was successfully updated. Joel is cool'
